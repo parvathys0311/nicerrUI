@@ -132,8 +132,8 @@
 
 .InputAddOn-field {
   padding: 0.9em;
-  /* width: 45%; */
-  flex: 1;
+  width: 45%;
+  /* flex: 1; */
   /* field styles */
 }
 
@@ -332,9 +332,10 @@ hr {
     width: 60%;
   }
 
-  /* .InputAddOn-field {
+  .InputAddOn-field {
     flex: 1;
-  } */
+    width: auto;
+  }
 
   .InputAddOn-item {
     padding: 0.9em;
