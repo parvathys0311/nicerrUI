@@ -221,7 +221,7 @@ button {
 .img-container {
   padding: 2em;
   /* padding-top: 3em; */
-  height: 170px;
+  height: 100px;
   /* min-height: auto;
   max-height: 180px; */
 
@@ -229,8 +229,9 @@ button {
 }
 
 .img-container img {
+  text-align: center;
   width: auto;
-  height: 40%;
+  height: 100%;
   /* display: block; */
 
   /* border: 1px solid blue; */
