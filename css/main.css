@@ -1,0 +1,201 @@
+.wrapper {
+  display: block;
+}
+/* sidebar nav */
+#dismiss img {
+  width: 30px;
+}
+#sidebar {
+  /* justify-content: space-around; */
+  /* padding: 2em; */
+
+  min-width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* top layer */
+  z-index: 9999;
+
+  margin-right: -120%;
+  background-color: #222222;
+}
+
+#sidebar.active {
+  margin-right: 0px;
+}
+
+#sidebar-links {
+  /* margin: 4em; */
+  /* align-self: center; */
+
+  padding: 5em;
+  border: 1px solid black;
+
+  /* height: 100vh; */
+
+  text-align: center;
+}
+
+#sidebar-links li {
+  margin-top: 1em;
+  padding: 1em 0;
+}
+
+#sidebar-links img {
+  /* padding: 1em; */
+  width: 18%;
+}
+
+#sidebar-links a {
+  color: #eeeeee;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 998;
+  opacity: 0;
+  /* animate the transition */
+  transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+}
+
+/* Hero - Section styling */
+
+.hero-section {
+}
+
+.container-page {
+  max-width: 100%;
+  margin: 0;
+  /* padding: 1em 1em; */
+
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.hero {
+  min-height: 90vh;
+}
+
+/* left container - hero section */
+
+.container-left {
+  margin-left: 2em;
+  padding-top: 5em;
+
+  max-width: 100%;
+  /* border: 1px solid grey; */
+}
+
+.container-left p,
+.container-left div {
+  padding-top: 2em;
+}
+
+.formSeeker {
+  /* width: 40%; */
+  /* max-width: 60%; */
+}
+
+.InputAddOn {
+  display: flex;
+
+  width: 100%;
+}
+
+.InputAddOn-field {
+  padding: 0.9em;
+  flex: 1;
+  /* field styles */
+}
+
+.InputAddOn-item {
+  padding: 0.9em;
+
+  width: 50%;
+  /* item styles */
+  color: #ffffff;
+  /* font-weight: bold; */
+  background-color: #cc0099;
+}
+
+button {
+  border: none;
+}
+
+/* right container - hero section  */
+
+.container-right {
+  /* width: 100%; */
+  /* background-color: #4eb8b4; */
+
+  flex: auto;
+
+  display: flex;
+  justify-content: center;
+
+  /* border: 1px solid orange; */
+}
+
+.imageStyle {
+  padding: 3em;
+  margin: auto;
+  width: 100%;
+
+  flex: auto;
+  /* border: 1px solid olive; */
+}
+
+.imageStyle img {
+  width: 100%;
+  /* border: 1px solid grey; */
+}
+
+@media (orientation: landscape) {
+  #sidebar {
+    min-width: 40%;
+    max-width: 40%;
+
+    margin-right: -60%;
+  }
+
+  #sidebar-links img {
+    /* padding: 0.em; */
+    width: 20%;
+  }
+
+  .container-page {
+    text-align: left;
+  }
+  .InputAddOn {
+    width: 60%;
+  }
+
+  .InputAddOn-item {
+    padding: 0.9em;
+
+    width: 40%;
+  }
+}
