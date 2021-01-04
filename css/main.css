@@ -214,6 +214,7 @@ button {
 /* ****************************************  */
 
 .gallery {
+  /* width: 80%; */
   margin: 3em auto;
   justify-content: center;
 }
@@ -233,6 +234,24 @@ button {
   width: auto;
   height: 100%;
   /* display: block; */
+
+  /* border: 1px solid blue; */
+}
+
+.img-container-sq {
+  margin: 1em;
+  padding: 2em;
+
+  height: 200px;
+  /* width: 200px; */
+  border: 1px solid rgb(148, 147, 147);
+}
+
+.img-container-sq img {
+  margin-right: 1em;
+  text-align: center;
+  height: 100%;
+  /* width: 100%; */
 
   /* border: 1px solid blue; */
 }
