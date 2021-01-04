@@ -29,17 +29,16 @@
 #sidebar-links {
   /* margin: 4em; */
   /* align-self: center; */
-
   padding: 5em;
   border: 1px solid black;
 
-  /* height: 100vh; */
+  height: 100vh;
 
   text-align: center;
 }
 
 #sidebar-links li {
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 1em 0;
 }
 
@@ -50,6 +49,15 @@
 
 #sidebar-links a {
   color: #eeeeee;
+}
+
+#sidebar-links hr {
+  width: 100%;
+  border: 0;
+  clear: both;
+  display: block;
+  background-color: rgb(134, 130, 130);
+  height: 0.5px;
 }
 
 .overlay {
@@ -77,8 +85,14 @@
   height: 35px;
   position: absolute;
   /* top right corner of the sidebar */
-  top: 10px;
-  right: 10px;
+  /* top: 10px;
+  right: 10px; */
+  top: 2em;
+  right: 2em;
+}
+
+#dismiss img {
+  width: 100%;
 }
 
 /* **************************************** */
@@ -108,7 +122,7 @@
 
 .container-left {
   margin: auto 2em;
-  padding-top: 5em;
+  padding-top: 2em;
 
   max-width: 100%;
   /* border: 1px solid grey; */
@@ -222,7 +236,6 @@ button {
   padding: 1em;
   width: 80px;
   background-color: #222222;
-  border: 1px solid yellow;
   color: #ffffff;
 }
 
@@ -265,7 +278,7 @@ button {
   margin-left: 0.25em;
 }
 
-hr {
+#test hr {
   width: 90%;
   border: 0;
   clear: both;
