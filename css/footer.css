@@ -7,14 +7,19 @@ footer {
 
   /* animation: BackgroundGradient 30s ease infinite; */
   margin: 0;
-  /* padding-top: 1.5em;
-  padding-bottom: 1em;
-  padding-left: 1em; */
+  /* padding-left: 1em;  */
 
   text-align: center;
 }
 
+#footer1,
 #footer2 {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+}
+
+#footer2 {
+  padding-top: 0.9em;
   background-color: #ecebeb;
 }
 
@@ -31,6 +36,10 @@ footer div img {
 .layout p,
 .layout h4 {
   margin: 0;
+}
+
+.font-tc {
+  color: #cc0099;
 }
 
 /* Following is for "sticky" footer */
