@@ -81,9 +81,11 @@
   right: 10px;
 }
 
-/* Hero - Section styling */
+/* **************************************** */
+/********** Hero - Section styling *********
+/* **************************************** */
 
-.hero-section {
+*/ .hero-section {
 }
 
 .container-page {
@@ -136,8 +138,6 @@
 
   width: 50%;
   /* item styles */
-  color: #ffffff;
-  /* font-weight: bold; */
   background-color: #cc0099;
 }
 
@@ -165,12 +165,138 @@ button {
   width: 100%;
 
   flex: auto;
-  /* border: 1px solid olive; */
 }
 
 .imageStyle img {
   width: 100%;
+}
+
+/* **************************************** */
+/********** Expert organisations **********/
+/* ****************************************  */
+
+.gallery {
+  margin: 3em auto;
+  justify-content: center;
+}
+
+.img-container {
+  padding: 2em;
+  padding-top: 3em;
+  width: 180px;
+  min-height: auto;
+  max-height: 180px;
+
+  /* border: 1px solid red; */
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+
+  /* border: 1px solid orange; */
+}
+
+/* **************************************** */
+/********** how it works **********/
+/* ****************************************  */
+
+.hiwBox {
+  margin-top: 2em;
+  padding: 1em;
+}
+.hiwBox p {
+  padding-top: 2em;
+}
+.numberBox {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 80px;
+  background-color: #222222;
+  border: 1px solid yellow;
+  color: #ffffff;
+}
+
+/* **************************************** */
+/********** testimonial **********/
+/* ****************************************  */
+
+.testimonial p,
+.testimonial .separator {
+  padding-top: 2em;
+}
+.testimonial img {
+  border-radius: 10%;
+  width: 180px;
+}
+
+.separator {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+.separator::before {
+  margin-right: 0.25em;
+}
+
+.separator::after {
+  margin-left: 0.25em;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  clear: both;
+  display: block;
+  background-color: rgb(185, 184, 184);
+  height: 1px;
+}
+
+/* **************************************** */
+/********** expert query **********/
+/* ****************************************  */
+
+.expertQuery {
   /* border: 1px solid grey; */
+}
+
+.expertQuery h2 {
+  padding-top: 1em;
+}
+
+.expertQuery h2,
+.expertQuery p,
+.expertQuery div {
+  padding-bottom: 1em;
+}
+
+.formExpert .InputAddOn {
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.formExpert InputAddOn-field {
+  width: 40%;
+}
+
+.formExpert .InputAddOn-item {
+  width: 50%;
 }
 
 @media (orientation: landscape) {
@@ -189,6 +315,7 @@ button {
   .container-page {
     text-align: left;
   }
+
   .InputAddOn {
     width: 60%;
   }
@@ -196,6 +323,14 @@ button {
   .InputAddOn-item {
     padding: 0.9em;
 
+    width: 40%;
+  }
+
+  .formExpert .InputAddOn {
+    width: 60%;
+  }
+
+  .formExpert .InputAddOn-item {
     width: 40%;
   }
 }

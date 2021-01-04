@@ -1,11 +1,12 @@
 .logo {
   /* height: 70px; */
-  width: 140px;
+  width: 130px;
   margin: 0;
   padding: 0;
 }
 .logo-item {
-  margin: 2em 2em;
+  margin: 1em 2em;
+  margin-bottom: 1.5em;
   /* padding: 1em; */
   /* border: 1px solid blue; */
 }
@@ -32,7 +33,7 @@ nav button {
 
 .btn-hamburger {
   width: 50px;
-  margin: 2em 2em;
+  margin: 1em 2em;
   /* border: 1px solid black; */
 }
 

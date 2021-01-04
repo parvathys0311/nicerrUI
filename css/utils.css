@@ -7,3 +7,28 @@
   display: flex;
   flex-direction: column;
 }
+
+.container-wrap {
+  flex-wrap: wrap;
+}
+
+.container-box {
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.box-width {
+  margin: 5em auto;
+  padding-left: 2em;
+  padding-right: 2em;
+
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .box-width {
+    margin: 5em auto;
+    width: 70%;
+  }
+}
