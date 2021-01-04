@@ -294,12 +294,12 @@ hr {
   width: 100%;
 }
 
-.formExpert InputAddOn-field {
-  width: 30%;
+.formExpert .InputAddOn-field {
+  width: 45%;
 }
 
 .formExpert .InputAddOn-item {
-  width: 55%;
+  width: 50%;
 }
 
 @media (orientation: landscape) {
