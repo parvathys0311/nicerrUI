@@ -1,6 +1,6 @@
 .logo {
   /* height: 70px; */
-  width: 130px;
+  width: 100px;
   margin: 0;
   padding: 0;
 }
@@ -29,6 +29,7 @@ nav {
 
 nav button {
   border: none;
+  background-color: inherit;
 }
 
 .btn-hamburger {

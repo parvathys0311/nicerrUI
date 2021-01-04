@@ -14,10 +14,8 @@ footer {
   text-align: center;
 }
 
-#footer1,
 #footer2 {
-  margin: 0 2em;
-  padding-top: 1em;
+  background-color: #ecebeb;
 }
 
 #footer1 p,
@@ -27,7 +25,7 @@ footer {
 }
 
 footer div img {
-  width: 5%;
+  width: 15%;
 }
 
 .layout p,
@@ -54,8 +52,8 @@ main {
   flex-grow: 1;
 }
 
-/* @media (orientation: landscape) {
-  .layout p {
-    margin-left: 2.5em;
+@media (orientation: landscape) {
+  footer div img {
+    width: 5%;
   }
-} */
+}

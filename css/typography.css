@@ -32,7 +32,7 @@ main p {
 
 main button {
   font-size: 1.1em;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .numberBox {
@@ -48,10 +48,10 @@ main button {
   /* font-size: 0.8em; */
 }
 
-button {
+/* button {
   font-family: inherit;
   font-size: 100%;
-}
+} */
 
 @media (orientation: landscape) {
   main h1 {
