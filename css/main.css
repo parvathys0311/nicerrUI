@@ -201,7 +201,10 @@ button {
 /* **************************************** */
 /********** how it works **********/
 /* ****************************************  */
-
+.hiwDetails {
+  display: flex;
+  flex-direction: column;
+}
 .hiwBox {
   margin-top: 2em;
   padding: 1em;
@@ -332,5 +335,9 @@ hr {
 
   .formExpert .InputAddOn-item {
     width: 40%;
+  }
+
+  .hiwDetails {
+    flex-direction: row;
   }
 }
