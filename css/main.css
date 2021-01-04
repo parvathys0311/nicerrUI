@@ -99,12 +99,15 @@
 
 .hero {
   min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* left container - hero section */
 
 .container-left {
-  margin-left: 2em;
+  margin: auto 2em;
   padding-top: 5em;
 
   max-width: 100%;
@@ -129,6 +132,7 @@
 
 .InputAddOn-field {
   padding: 0.9em;
+  /* width: 45%; */
   flex: 1;
   /* field styles */
 }
@@ -315,6 +319,11 @@ hr {
     width: 20%;
   }
 
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+
   .container-page {
     text-align: left;
   }
@@ -322,6 +331,10 @@ hr {
   .InputAddOn {
     width: 60%;
   }
+
+  /* .InputAddOn-field {
+    flex: 1;
+  } */
 
   .InputAddOn-item {
     padding: 0.9em;
