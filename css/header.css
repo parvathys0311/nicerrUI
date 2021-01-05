@@ -33,7 +33,7 @@ nav button {
 }
 
 .btn-hamburger {
-  width: 50px;
+  width: 65px;
   margin: 1em 2em;
   /* border: 1px solid black; */
 }
@@ -43,4 +43,10 @@ nav button {
   padding: 0;
   width: 100%;
   /* border: 1px solid olive; */
+}
+
+@media (orientation: landscape) {
+  .btn-hamburger {
+    width: 50px;
+  }
 }
