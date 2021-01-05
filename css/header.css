@@ -1,14 +1,14 @@
 .logo {
   /* height: 70px; */
-  width: 100px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 .logo-item {
   margin: 1em 2em;
-  margin-bottom: 1.5em;
-  /* padding: 1em; */
-  /* border: 1px solid blue; */
+  /* margin-bottom: 1.5em; */
+
+  width: 100px;
 }
 
 .logo-item img {
@@ -39,6 +39,8 @@ nav button {
 }
 
 .harmburger-img {
+  margin: 0;
+  padding: 0;
   width: 100%;
   /* border: 1px solid olive; */
 }
