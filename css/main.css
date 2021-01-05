@@ -116,7 +116,7 @@
 /* left container - hero section */
 
 .container-left {
-  margin: auto 2em;
+  margin: 3em 2em;
   padding-top: 2em;
 
   max-width: 100%;
@@ -448,6 +448,10 @@ button {
 
   .container-page {
     text-align: left;
+  }
+
+  .container-left {
+    margin: auto 2em;
   }
 
   .InputAddOn {
