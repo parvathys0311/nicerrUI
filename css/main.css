@@ -99,10 +99,10 @@
 
 .container-page {
   max-width: 100%;
-  margin: 0;
+  /* margin: 0; */
   /* padding: 1em 1em; */
 
-  text-align: center;
+  /* text-align: center; */
   /* border: 1px solid black; */
 }
 
@@ -140,7 +140,7 @@
   display: flex;
 
   width: 100%;
-  border: 1px solid rgb(167, 165, 165);
+  border: 1px solid rgb(206, 205, 205);
 }
 
 .InputAddOn-field {
@@ -148,6 +148,7 @@
   width: 50%;
 
   border: none;
+  background-color: #f2f2f2;
   /* flex: 1; */
   /* field styles */
 }
@@ -427,6 +428,22 @@ button {
   border: none;
 }
 
+/* **************************************** */
+/********** SEEKER QUERY PAGE **********/
+/* ****************************************  */
+
+.seekerquery .container-left {
+  border: 1px solid blue;
+}
+
+.seekerquery .container-right {
+  border: 1px solid green;
+}
+
+.seekerquery .imageStyle {
+  border: 1px solid red;
+}
+
 @media (orientation: landscape) {
   /* index page */
   #sidebar {
@@ -461,12 +478,14 @@ button {
   .InputAddOn-field {
     flex: 1;
     width: auto;
+    /* height: 50px; */
   }
 
   .InputAddOn-item {
     padding: 0.9em;
 
     width: 40%;
+    /* height: 50px; */
   }
 
   .formExpert .InputAddOn {

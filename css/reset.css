@@ -15,8 +15,14 @@ ul {
 }
 /* removes defualt underline in <a> links */
 a {
+  color: #cc0099;
+  text-size-adjust: none;
   text-decoration: none;
-  /* text-size-adjust: none; */
+}
+
+a:hover {
+  color: #cc0099;
+  text-decoration: none;
 }
 
 button,
