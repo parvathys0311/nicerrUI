@@ -433,15 +433,65 @@ button {
 /* ****************************************  */
 
 .seekerquery .container-left {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .seekerquery .container-right {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .seekerquery .imageStyle {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.formSeekerDetails ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSeekerDetails ul li {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .ex-input {
+  width: 100%;
+  border: 1px solid orange;
+} */
+
+.formSeekerDetails input,
+.formSeekerDetails select,
+.formSeekerDetails option {
+  margin-top: 0.8em;
+  padding: 0.4em 0;
+
+  border: 0;
+  /* border-top: 1px solid blue; */
+  border-bottom: 0.5px solid #dddddd;
+
+  font-family: inherit;
+  /* font-size: 1em; */
+
+  width: 100%;
+  background-color: transparent;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.formSeekerDetails select {
+  color: #dddddd;
+}
+
+.formSeekerDetails select option {
+  color: #222222;
+}
+
+.formSeekerDetails select option:first-child {
+  color: #dddddd;
 }
 
 @media (orientation: landscape) {
