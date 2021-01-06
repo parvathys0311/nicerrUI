@@ -14,21 +14,55 @@
 
 .container-box {
   margin: auto;
-  max-width: 1200px;
+  max-width: 100%;
   text-align: center;
 }
 
-.box-width {
-  margin: 5em auto;
+.box-style {
+  margin: 3em auto;
+  padding-top: 5em;
+  padding-bottom: 3em;
   padding-left: 2em;
   padding-right: 2em;
+}
 
+.box-width-expertOrg {
+  width: 100%;
+}
+
+.hiw-box-width {
+  /* border: 1px solid grey; */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.box-width-testimonial {
+  margin: auto;
+  width: 100%;
+}
+
+.box-width-expert {
+  margin: auto;
   width: 100%;
 }
 
 @media (orientation: landscape) {
-  .box-width {
-    margin: 5em auto;
+  .box-style {
+    /* border: 1px solid blue; */
+    padding: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+
+  .box-width-expert {
+    margin: auto;
     width: 70%;
+  }
+
+  .box-width-testimonial {
+    width: 50%;
   }
 }
