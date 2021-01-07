@@ -1,3 +1,15 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header.sticky nav {
+  padding: 0.5em;
+  transition: padding 300ms ease;
+  opacity: 0.9;
+}
+
 .logo {
   /* height: 70px; */
   width: 100%;
@@ -11,16 +23,11 @@
   width: 100px;
 }
 
-.logo-item img {
-  /* margin: 1em;
-  margin-left: 2em; */
-  /* margin: 1em; */
-  /* border: 1px solid olive; */
-}
-
 nav {
+  width: 100%;
   margin: 0;
-  padding: 1.5em 0;
+  /* padding: 1.5em 0; */
+  padding: 1.2em 0;
 
   display: flex;
   justify-content: space-between;
@@ -44,21 +51,6 @@ nav button {
   padding: 0;
   width: 100%;
   /* border: 1px solid olive; */
-}
-
-/* sticky header */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-
-.sticky + .content {
-  padding-top: 7em;
 }
 
 @media (orientation: landscape) {

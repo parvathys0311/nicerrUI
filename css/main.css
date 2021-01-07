@@ -97,6 +97,11 @@
 /********** Hero - Section styling *********
 /* **************************************** */
 
+/* for maintaining sticky header */
+main {
+  margin-top: 114px;
+}
+
 .container-page {
   max-width: 100%;
   /* margin: 0; */
@@ -394,14 +399,14 @@ button {
   margin-top: 2em;
 }
 
-.accordion {
+#accordion {
   width: 100%;
 }
 
 .accordion-button {
   -webkit-appearance: none;
   background-color: #f2f2f2;
-  /* color: #444; */
+  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -409,8 +414,8 @@ button {
 
   outline: none;
   transition: 0.4s;
-  /* font-size: inherit; */
-  /* font-weight: bold; */
+  font-size: inherit;
+  font-weight: bold;
 }
 
 .accordion-title {
@@ -423,13 +428,13 @@ button {
   width: 100%;
   text-align: left;
 
-  /* background-color: white; */
-  /* display: none; */
+  background-color: white;
+  display: none;
   overflow: hidden;
   margin: auto;
 }
 
-#acc .accordion-content {
+/* #acc .accordion-content {
   display: none;
 }
 
@@ -440,6 +445,27 @@ button {
 #acc .active .accordion-button {
   background-color: white;
   border: none;
+} */
+
+#accordion ul li a {
+  display: block;
+}
+
+.accordion-content {
+  display: none;
+}
+
+/* .panel :first-child div {
+  display: block;
+} */
+
+.accordion-content:target {
+  display: block;
+}
+
+#accordion ul li:first-of-type div {
+  display: block;
+  border-top: 3px solid #ffcdcd;
 }
 
 /* **************************************** */
@@ -544,7 +570,8 @@ select:focus {
   }
 
   .InputAddOn {
-    width: 60%;
+    width: 65%;
+    /* border: 1px solid black; */
   }
 
   .InputAddOn-field {
@@ -602,7 +629,7 @@ select:focus {
   }
 
   /* faq page */
-  .accordion {
+  #accordion {
     width: 50%;
   }
 }
