@@ -26,6 +26,14 @@
   padding-right: 2em;
 }
 
+.box-style-set2 {
+  margin: 3em auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .box-width-expertOrg {
   width: 100%;
 }
@@ -54,6 +62,14 @@
     margin-left: 4em;
     margin-right: 4em;
     padding-top: 5em;
+    padding-bottom: 3em;
+  }
+
+  .box-style-set2 {
+    padding: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 3em;
     padding-bottom: 3em;
   }
 

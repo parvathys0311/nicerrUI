@@ -267,6 +267,7 @@ button {
 /********** how it works **********/
 /* ****************************************  */
 .hiwDetails {
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -342,16 +343,16 @@ button {
 }
 
 .expertQuery h2 {
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 
-.expertQuery h2,
 .expertQuery p {
+  padding-top: 2em;
   padding-bottom: 1em;
 }
 
 .expertQuery div {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .formExpert .InputAddOn {
@@ -598,6 +599,7 @@ select:focus {
 
   .hiwBox {
     flex: 1 1 0;
+    margin-right: 1.5em;
   }
 
   .hiw-box-width {
