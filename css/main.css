@@ -272,12 +272,8 @@ button {
 }
 .hiwBox {
   margin-top: 2em;
-  padding: 1em;
-
-  flex: 1 1 0;
 }
 .hiwBox p {
-  flex: auto;
   padding-top: 2em;
 }
 .numberBox {
@@ -598,6 +594,10 @@ select:focus {
 
   .hiwDetails {
     flex-direction: row;
+  }
+
+  .hiwBox {
+    flex: 1 1 0;
   }
 
   .hiw-box-width {
