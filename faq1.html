@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicerr UI</title>
+
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- css - style links -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header1.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- jquery for accordion -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="container-column sidebarNav">
+        <div id="dismiss">
+          <img
+            class="menu-close"
+            src="./images/Nicerr-Icon-Close.png"
+            alt="close menu icon"
+          />
+        </div>
+
+        <ul class="list-unstyled components" id="sidebar-links">
+          <li class="active">
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="faq1.html">FAQ</a>
+          </li>
+          <hr class="line" />
+          <li>
+            <a href="#">hello@nicerr.org</a>
+          </li>
+          <hr />
+          <li>
+            <img
+              class="imgSocialMedia"
+              src="./images/Nicerr-Icon-LinkedIn.png"
+              alt="linkedin icon"
+            />
+            <img
+              class="imgSocialMedia"
+              src="./images/Nicerr-Icon-Twitter.png"
+              alt="twitter icon"
+            />
+            <img
+              class="imgSocialMedia"
+              src="./images/Nicerr-Icon-Instagram.png"
+              alt="instagram icon"
+            />
+            <img
+              class="imgSocialMedia"
+              src="./images/Nicerr-Icon-Facebook.png"
+              alt="facebook icon"
+            />
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div>
+        <header id="head">
+          <nav>
+            <div class="logo-item">
+              <a href="index.html"
+                ><img
+                  class="logo"
+                  src="./images/Nicerr-Logo-600x204.png"
+                  alt="MockWiz Logo"
+              /></a>
+            </div>
+            <button type="button" id="sidebarCollapse" class="btn-hamburger">
+              <img
+                class="harmburger-img"
+                src="./images/Nicerr-Icon-Menu.png"
+                alt="harmburger-menu"
+              />
+              <!-- <span>Toggle Sidebar</span> -->
+            </button>
+          </nav>
+        </header>
+
+        <main>
+          <!-- FAQ  -->
+          <div class="container-column" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div id="accordion">
+              <div class="expandDiv faq-box panel">
+                <button
+                  class="accordion-button heading"
+                  style="background-color: white"
+                >
+                  <span class="accordion-title"
+                    >How do I book a mock interview on Nicerr?</span
+                  >
+                </button>
+                <div class="content accordion-content" style="display: block">
+                  Nicerr is the easiest and fastest way to book mock interviews
+                  with real, experienced product professionals. This is how it
+                  works:
+                  <ol>
+                    <li>Fill a simple form to provide your requirements.</li>
+                    <li>Get pro suggestions tailored to your requirements.</li>
+                    <li>
+                      Select a pro, pick a time & pay the meeting fee to get the
+                      meeting invite.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >What kind of professionals can I book on Nicerr??</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  We have top, experienced product professionals from a variety
+                  of organizations and locations. Some of the common profiles
+                  include product managers, product designers and product owners
+                  at world class product organizations.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >How does a mock interview session happen?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  Each session is a 40-minute video call. The first 30 minutes
+                  is the core mock interview, followed by a 10-minute live
+                  feedback session.The call is scheduled through Zoom, Google
+                  Meet or Microsoft Teams. We will schedule the call and send
+                  you a calendar invite with the meeting link.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >Do you record the session?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  We can. You have the option to request a recording of the call
+                  so that you can review it later.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >Is there any fee to use the platform?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  You can get the pro recommendations for free. You are only
+                  required to pay if you like the matches and want to schedule a
+                  mock interview session. Each 40-minute mock interview costs
+                  $89, plus applicable taxes.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >What forms of payment do you accept?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  We accept all major credit cards. We can also accept email
+                  money transfers for the residents of Canada.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >Is my payment information safe?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  Absolutely. We use a secure 256-bit SSL connection, and your
+                  credit card information is processed securely by Stripe. We do
+                  not store your payment information.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >What is the cancellation & refund policy?</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  We offer full refund if the person you booked cancels the
+                  session for any emergency or unforeseen circumstances. We
+                  offer partial refund if you cancel the meeting more than 24
+                  hours prior to scheduled time. In this case, $10 cancellation
+                  fee will be deducted from the amount paid. We cannot offer
+                  refunds if you cancel the meeting within 24 hours of scheduled
+                  time, or if you don’t show up for the meeting.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title"
+                    >What portion of the session fee goes to charity??</span
+                  >
+                </button>
+                <div class="content accordion-content">
+                  Each interviewer selects a charity and decides the
+                  contribution amount – which can range from a minimum of $10 to
+                  a maximum of $50. The charity organization and the
+                  contribution amount are listed on the interviewer’s profile
+                  page.
+                </div>
+              </div>
+              <div class="expandDiv faq-box panel">
+                <button class="accordion-button heading">
+                  <span class="accordion-title">
+                    Will I get a tax receipt?
+                  </span>
+                </button>
+                <div class="content accordion-content">
+                  Unfortunately, not at the moment. We are currently working
+                  with legal and tax experts to streamline the tax receipt
+                  stuff.
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- footer -->
+        <footer class="layout">
+          <section id="footer1">
+            <p class="font-small">Follow us to stay in the know!</p>
+            <div>
+              <img
+                class="imgSocialMedia"
+                src="./images/Nicerr-Icon-LinkedIn.png"
+                alt="linkedin icon"
+              />
+              <img
+                class="imgSocialMedia"
+                src="./images/Nicerr-Icon-Twitter.png"
+                alt="twitter icon"
+              />
+              <img
+                class="imgSocialMedia"
+                src="./images/Nicerr-Icon-Instagram.png"
+                alt="instagram icon"
+              />
+              <img
+                class="imgSocialMedia"
+                src="./images/Nicerr-Icon-Facebook.png"
+                alt="facebook icon"
+              />
+            </div>
+          </section>
+          <section id="footer2">
+            <a href="#">Terms of Use & Privacy Policy</a>
+            <p class="font-small">© 2020-21. All rights reserved.</p>
+          </section>
+        </footer>
+      </div>
+      <!-- Dark Overlay element -->
+      <div class="overlay"></div>
+    </div>
+  </body>
+
+  <!-- jQuery CDN - Slim version-->
+  <!-- <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"
+  ></script> -->
+
+  <!-- Popper.JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"
+  ></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/headerAnimation.js"></script>
+  <script src="./js/accordion1.js"></script>
+</html>

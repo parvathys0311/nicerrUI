@@ -35,6 +35,10 @@ main p {
   font-size: 1.1em;
 }
 
+.about-container p {
+  font-size: 1.1em;
+}
+
 main button {
   font-size: 1.1em;
   font-weight: 600;

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/header1.css" />
 
     <!-- font awesome -->
     <link
@@ -40,10 +40,10 @@
 
         <ul class="list-unstyled components" id="sidebar-links">
           <li class="active">
-            <a href="#">About</a>
+            <a href="about.html">About</a>
           </li>
           <li>
-            <a href="faq.html">FAQ</a>
+            <a href="faq1.html">FAQ</a>
           </li>
           <hr class="line" />
           <li>
@@ -76,8 +76,8 @@
       </nav>
 
       <!-- Page Content -->
-      <div id="content">
-        <header>
+      <div>
+        <header id="head">
           <nav>
             <div class="logo-item">
               <a href="index.html"
@@ -100,14 +100,14 @@
 
         <main>
           <!-- HERO Section  -->
-          <section class="hero-section seekerquery">
-            <div class="hero">
-              <div class="container-left container-column">
-                <h1>
+          <section>
+            <div class="signup-container">
+              <div class="signupContainer-left">
+                <h2>
                   Find the right product professional to help you succeed.
-                </h1>
+                </h2>
                 <div>
-                  <form action="#" class="formSeekerDetails">
+                  <form action="#" class="formsignupDetails" id="signup">
                     <ul class="containerForm">
                       <li>
                         <label>Email</label>
@@ -138,7 +138,7 @@
                       </li>
                       <li>
                         <label>Product roles I want to practice for</label>
-                        <select id="role" class="ex-input selectEx">
+                        <select id="role" class="ex-input selectSeeker">
                           <option value="" disabled selected>Select</option>
                           <option value="1" class="color">
                             General Product Management
@@ -159,20 +159,18 @@
                           Submit
                         </button>
                       </li>
-                      <li>
-                        <p class="font-small">
-                          By clicking on submit, you understand and consent to
-                          our <a href="#">Terms of Service & Privacy Policy</a>
-                        </p>
-                      </li>
                       <!-- <input type="submit" value="Submit"> -->
                     </ul>
                   </form>
                 </div>
+                <p class="font-small">
+                  By clicking on submit, you understand and consent to our
+                  <a href="#">Terms of Service & Privacy Policy</a>
+                </p>
               </div>
-              <div class="container-right">
-                <div class="imageStyle">
-                  <img src="./images/Nicerr-Signup.svg" />
+              <div class="signupContainer-right">
+                <div class="signup-imageStyle">
+                  <img src="./images/Nicerr-Signup.png" />
                 </div>
               </div>
             </div>
@@ -241,4 +239,6 @@
 
   <!-- sidebar js -->
   <script src="./js/sidebar.js"></script>
+  <script src="./js/headerAnimation.js"></script>
+  <script src="./js/formSelect.js"></script>
 </html>
