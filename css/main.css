@@ -37,17 +37,20 @@
 
 #sidebar-links li {
   margin-top: 2em;
-  padding: 1em 0;
+  padding: 0.6em 0;
 }
 
-#sidebar-links img {
+#sidebar-links li img {
   /* padding: 1em; */
-  width: 18%;
+  margin: auto;
+  padding-right: 0.5em;
+  width: 16%;
+  /* border: 1px solid black; */
 }
 
-#sidebar-links a {
-  color: #222222;
-}
+/* #sidebar-links a {
+  color: #a2008a;
+} */
 
 #sidebar-links hr {
   width: 100%;
@@ -85,12 +88,12 @@
   /* top right corner of the sidebar */
   /* top: 10px;
   right: 10px; */
-  top: 2em;
-  right: 2em;
+  top: 2.5em;
+  right: 3em;
 }
 
 #dismiss img {
-  width: 100%;
+  width: 80%;
 }
 
 /* **************************************** */
@@ -107,7 +110,7 @@ main {
   /* margin: 0; */
   /* padding: 1em 1em; */
 
-  /* text-align: center; */
+  text-align: center;
   /* border: 1px solid black; */
 }
 
@@ -123,18 +126,30 @@ main {
 
 .container-left {
   margin: 3em 2em;
-  padding-top: 2em;
+  padding-top: 1em;
 
-  max-width: 100%;
+  flex: auto;
   /* border: 1px solid grey; */
 }
 
 .container-left p {
-  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.container-left ul {
+  padding-top: 1em;
+  margin: 0;
+  list-style: none;
+}
+
+.container-left ul li:before {
+  padding-right: 1em;
+  content: "✓";
 }
 
 .container-left div {
-  margin-top: 1em;
+  margin: 0;
+  padding-top: 1em;
 }
 
 .InputAddOn {
@@ -147,7 +162,7 @@ main {
   width: 50%;
 
   border: none;
-  background-color: #f2f2f2;
+
   /* flex: 1; */
   /* field styles */
 }
@@ -157,8 +172,6 @@ main {
   padding: 0em;
 
   width: 50%;
-  /* item styles */
-  background-color: #cc0099;
 }
 
 button {
@@ -193,24 +206,26 @@ button {
 
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 
   /* border: 1px solid orange; */
 }
 
 .imageStyle {
   padding: 3em;
-  margin: auto;
-  width: 100%;
+  text-align: center;
 
-  flex: auto;
+  /* width: 100%; */
+
+  width: 90%;
 }
 
 .imageStyle img {
-  width: 100%;
+  width: 90%;
 }
 
 .colorLine {
-  color: #00ff00;
+  color: #279600;
 }
 
 /* **************************************** */
@@ -225,7 +240,7 @@ button {
 
 .heading-container {
   /* border: 1px solid orange; */
-  margin: auto;
+  margin: 0 auto;
   width: 70%;
 }
 
@@ -341,13 +356,13 @@ button {
   /* padding-top: 1em; */
 }
 
-.expertQuery p {
+.tagLine {
   padding-top: 2em;
   padding-bottom: 1em;
 }
 
 .expertQuery div {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .formExpert .InputAddOn {
@@ -362,6 +377,10 @@ button {
 
 .formExpert .InputAddOn-item {
   width: 50%;
+}
+
+.spaceLine {
+  padding-top: 1em;
 }
 
 /* **************************************** */
@@ -393,6 +412,18 @@ button {
 }
 
 #accordion {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-left {
+  width: 100%;
+}
+
+.accordion-right {
+  margin-top: 2em;
   width: 100%;
 }
 
@@ -472,7 +503,7 @@ button {
 /* **************************************** */
 /********** signup QUERY PAGE **********/
 /* ****************************************  */
-
+.interviewer-signup-container,
 .signup-container {
   display: flex;
   flex-direction: column;
@@ -518,24 +549,28 @@ button {
   padding: 1em 0;
 }
 
+#interviewer-signup button,
 #signup button {
   margin-top: 0.5em;
   width: 60%;
   padding: 0.9em;
-  background-color: #cc0099;
+
   color: #ffffff;
   font-size: bold;
 }
 
+.interviewer-formsignupDetails,
 .formsignupDetails {
   background-color: white;
 }
 
+.interviewer-formsignupDetails ul,
 .formsignupDetails ul {
   display: flex;
   flex-direction: column;
 }
 
+.interviewer-formsignupDetails ul li,
 .formsignupDetails ul li {
   margin-top: 1.2em;
 
@@ -549,12 +584,17 @@ button {
   border: 1px solid orange;
 } */
 
+.interviewer-formsignupDetails label,
 .formsignupDetails label {
   margin: 0;
   padding-bottom: 0.2em;
 }
-
+.interviewer-formsignupDetails input,
+.interviewer-formsignupDetails textarea,
+.interviewer-formsignupDetails option,
+.interviewer-formsignupDetails select,
 .formsignupDetails input,
+.formsignupDetails textarea,
 .formsignupDetails select,
 .formsignupDetails option {
   padding: 0.4em 0;
@@ -569,7 +609,12 @@ button {
   background-color: transparent;
 }
 
+textarea {
+  resize: vertical;
+}
+
 input:focus,
+textarea:focus,
 select:focus {
   outline: none;
 }
@@ -582,23 +627,26 @@ input:-webkit-autofill:active {
 }
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: #00ff00 !important;
+  -webkit-text-fill-color: #279600 !important;
 }
 
+#interviewer-signup input,
 #signup input,
 #signup textarea {
-  color: #00ff00;
+  color: #279600;
 }
 
+.interviewer-formsignupDetails select,
 .formsignupDetails select {
   -webkit-appearance: none;
   color: #c2c2c2;
 }
 
+.interviewer-formsignupDetails select option,
 .formsignupDetails select option {
   color: #222222;
 }
-
+.interviewer-formsignupDetails select option:first-child,
 .formsignupDetails select option:first-child {
   color: #c2c2c2;
 }
@@ -614,8 +662,8 @@ input:-webkit-autofill {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
+  /* justify-content: center; */
+  min-height: 70vh;
 }
 
 .thankyouContainer-left {
@@ -659,6 +707,62 @@ input:-webkit-autofill {
 }
 
 /* **************************************** */
+/********** Interviewer Signup page **********/
+/* ****************************************  */
+
+.interviewer-signupContainer-left {
+  margin: 3em 2em;
+  margin-bottom: 1em;
+
+  text-align: center;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.interviewer-signupContainer-left h2,
+.interviewer-signupContainer-left p {
+  /* flex: auto;
+  padding: 1em; */
+}
+
+.interviewer-signupContainer-right {
+  margin: 2em 2em;
+  margin-bottom: 2em;
+  /* border: 1px solid green; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+#interviewer-signup ul li {
+  width: 100%;
+}
+
+#interviewer-signup button {
+  width: 100%;
+}
+
+/* **************************************** */
+/********** INTERV - THANK YOU PAGE **********/
+/* ****************************************  */
+
+.intThankyou-container {
+  margin: 4em 2em;
+
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.intThankyou-container h2 {
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+/* **************************************** */
 /********** ABOUT PAGE **********/
 /* ****************************************  */
 
@@ -684,6 +788,11 @@ input:-webkit-autofill {
 .aboutContainer-left p {
   padding: 0.5em 0;
   width: 100%;
+}
+
+.aboutContainer-left div {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .aboutContainer-right {
@@ -734,6 +843,40 @@ input:-webkit-autofill {
   font-size: 1.2em;
 }
 
+/* **************************************** */
+/********** 404 Page **********/
+/* ****************************************  */
+
+.container-404 {
+  margin: 4em 4em;
+  margin-bottom: 2em;
+  padding: 1em;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.container-404 div {
+  margin-top: 2em;
+}
+.container-404 h3,
+.container-404 p {
+  margin-top: 0.6em;
+}
+
+.Style404 img {
+  width: 50%;
+}
+
+.container-404 button {
+  margin: 1em auto;
+  padding: 0.6em;
+  width: 100%;
+}
+
 @media (orientation: landscape) {
   /* index page */
   #sidebar {
@@ -760,12 +903,21 @@ input:-webkit-autofill {
   .container-left {
     margin: auto 4em;
     margin-right: 0;
+
+    width: 60%;
     /* border: 1px solid green; */
+  }
+
+  .container-left p {
+    width: 80%;
+    margin-top: 2em;
   }
 
   .container-right {
     margin: auto 4em;
     margin-left: 0;
+
+    width: 40%;
     /* border: 1px solid green; */
   }
 
@@ -805,21 +957,24 @@ input:-webkit-autofill {
   }
 
   .hiw-box-width {
-    margin: 5em auto;
+    margin: 0 auto;
     width: 90%;
   }
 
   .gallery {
+    margin: 0;
+    margin-top: 1.7em;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .img-container {
     margin: 0;
-    padding: 2em;
+    padding: 2.2em;
     /* padding-top: 3em; */
     height: 100px;
     width: auto;
+    /* max-width: 30%; */
 
     /* border: 1px solid red; */
   }
@@ -827,7 +982,7 @@ input:-webkit-autofill {
   .img-container img {
     text-align: center;
     width: auto;
-    height: 100%;
+    height: 90%;
     /* display: block; */
 
     /* border: 1px solid blue; */
@@ -840,11 +995,22 @@ input:-webkit-autofill {
   }
 
   #accordion {
-    width: 50%;
+    flex-direction: row;
+  }
+
+  .accordion-left {
+    margin-right: 1em;
+    padding-right: 2em;
+    width: 60%;
+  }
+
+  .accordion-right {
+    padding-left: 5em;
+    width: 40%;
   }
 
   /* signup page */
-
+  .interviewer-signup-container,
   .signup-container {
     flex-direction: row;
   }
@@ -861,6 +1027,7 @@ input:-webkit-autofill {
     flex: 1.5;
   }
 
+  .interviewer-formsignupDetails ul,
   .formsignupDetails ul {
     display: flex;
     flex-direction: column;
@@ -879,11 +1046,48 @@ input:-webkit-autofill {
   }
 
   .thankyouContainer-left {
-    margin: auto 4em;
+    margin: 2em 4em;
   }
 
-  .thankyouContainer-right {
+  /* .thankyouContainer-right {
     width: 50%;
+  } */
+
+  /* interviewer signup page */
+
+  .interviewer-signupContainer-left {
+    margin-right: 1em;
+    text-align: left;
+    width: 55%;
+  }
+
+  .interviewer-signupContainer-right {
+    margin: 4em 4em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding-left: 5em;
+    width: 45%;
+  }
+
+  #interviewer-signup ul li {
+    width: 90%;
+  }
+
+  #interviewer-signup button {
+    width: 80%;
+  }
+
+  /* interv -thankyou page */
+
+  .intThankyou-container {
+    margin: 4em 4em;
+
+    min-height: 55vh;
+  }
+
+  .intThankyou-container h2 {
+    margin-top: 2em;
+    padding-bottom: 1em;
   }
 
   /* about page */
@@ -914,5 +1118,29 @@ input:-webkit-autofill {
   .tc {
     margin: 12em 4em;
     margin-bottom: 5em;
+  }
+
+  /* 404 page */
+
+  .Style404 img {
+    width: 15%;
+  }
+
+  .container-404 div,
+  .container-404 h3,
+  .container-404 p {
+    margin-top: 1em;
+  }
+
+  .container-404 p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  .container-404 button {
+    margin: 1em auto;
+    padding: 0.8em;
+    width: 20%;
   }
 }

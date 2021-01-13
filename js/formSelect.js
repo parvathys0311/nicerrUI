@@ -6,7 +6,7 @@ select.onchange = function colorChange() {
   console.log("1");
   if (select.value != 'null') {
     console.log('yes');
-    select.style.color = '#00ff00';
+    select.style.color = '#279600';
   } else {
     select.style.color = '#c2c2c2';
   }

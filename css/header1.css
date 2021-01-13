@@ -6,6 +6,7 @@ header {
 
 header.sticky nav {
   padding: 0.5em;
+  padding-left: 0;
   transition: padding 300ms ease;
   opacity: 0.9;
 }
@@ -42,14 +43,15 @@ nav button {
 }
 
 .btn-hamburger {
-  margin-right: 0.5em;
-  width: 65px;
+  margin-right: 1em;
+  /* border: 1px solid blue; */
+  width: 45px;
 }
 
 .harmburger-img {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 80%;
   /* border: 1px solid olive; */
 }
 

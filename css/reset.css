@@ -15,13 +15,15 @@ ul {
 }
 /* removes defualt underline in <a> links */
 a {
-  color: #cc0099;
+  color: #a2008a;
   text-size-adjust: none;
   text-decoration: none;
+
+  font: inherit;
 }
 
 a:hover {
-  color: #cc0099;
+  color: #bb2ea6;
   text-decoration: none;
 }
 
