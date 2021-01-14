@@ -1,3 +1,6 @@
+.fas {
+  color: white;
+}
 .container-row {
   display: flex;
   flex-direction: row;

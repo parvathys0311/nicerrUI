@@ -85,6 +85,7 @@
   width: 35px;
   height: 35px;
   position: absolute;
+  cursor: pointer;
   /* top right corner of the sidebar */
   /* top: 10px;
   right: 10px; */
@@ -125,15 +126,17 @@ main {
 /* left container - hero section */
 
 .container-left {
-  margin: 3em 2em;
+  margin: 2.4em 2em;
   padding-top: 1em;
+
+  text-align: left;
 
   flex: auto;
   /* border: 1px solid grey; */
 }
 
 .container-left p {
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .container-left ul {
@@ -159,7 +162,8 @@ main {
 
 .InputAddOn-field {
   padding: 0.9em;
-  width: 50%;
+  width: 80%;
+  /* width: 65%; */
 
   border: none;
 
@@ -171,12 +175,34 @@ main {
   margin: 0;
   padding: 0em;
 
-  width: 50%;
+  width: 20%;
+  /* width: 35%; */
+}
+
+/* #seeker .InputAddOn {
+  flex-direction: column;
+}
+
+#seeker .InputAddOn-field {
+  width: 100%;
+}
+
+#seeker .InputAddOn-item {
+  margin-top: 0.8em;
+  padding: 1em;
+} */
+
+#seeker button {
+  font-size: 1em;
 }
 
 button {
   border: none;
   color: #ffffff;
+}
+
+button:checked {
+  border: none;
 }
 
 ::-webkit-input-placeholder {
@@ -194,6 +220,11 @@ button {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #c2c2c2;
+}
+
+.space {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* right container - hero section  */
@@ -316,11 +347,12 @@ button {
   width: 90%;
 
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.separator::before,
+/* .separator::before,
 .separator::after {
   content: "";
   flex: 1;
@@ -333,16 +365,16 @@ button {
 
 .separator::after {
   margin-left: 0.25em;
-}
+} */
 
-#test hr {
+/* #test hr {
   width: 90%;
   border: 0;
   clear: both;
   display: block;
   background-color: rgb(185, 184, 184);
   height: 1px;
-}
+} */
 
 /* **************************************** */
 /********** expert query **********/
@@ -423,7 +455,8 @@ button {
 }
 
 .accordion-right {
-  margin-top: 2em;
+  margin-top: 1em;
+  padding-top: 1em;
   width: 100%;
 }
 
@@ -510,10 +543,9 @@ button {
 }
 
 .signupContainer-left {
-  margin: 4em 2em;
-  margin-right: 1em;
+  margin: 3em 2em;
   margin-bottom: 2em;
-  flex: auto;
+  /* flex: auto; */
   /* border: 1px solid red; */
 
   display: flex;
@@ -527,23 +559,23 @@ button {
   flex-direction: column;
 }
 
-.signupContainer-right {
+/* .signupContainer-right {
   margin: auto;
   margin-right: 2em;
   margin-bottom: 2em;
-  text-align: center;
-  /* border: 1px solid blue; */
-
+  text-align: center; */
+/* border: 1px solid blue; */
+/* 
   flex: auto;
-}
+} */
 
-.signup-imageStyle {
+/* .signup-imageStyle {
   margin: auto;
 }
 
 .signup-imageStyle img {
   width: 100%;
-}
+} */
 
 .signup-container p {
   padding: 1em 0;
@@ -559,7 +591,6 @@ button {
   font-size: bold;
 }
 
-.interviewer-formsignupDetails,
 .formsignupDetails {
   background-color: white;
 }
@@ -667,7 +698,7 @@ input:-webkit-autofill {
 }
 
 .thankyouContainer-left {
-  margin: auto 2em;
+  margin: 2em 2em;
   margin-bottom: 2em;
   max-width: 100%;
   /* border: 1px solid grey; */
@@ -712,9 +743,8 @@ input:-webkit-autofill {
 
 .interviewer-signupContainer-left {
   margin: 3em 2em;
-  margin-bottom: 1em;
 
-  text-align: center;
+  text-align: left;
   /* border: 1px solid red; */
 
   display: flex;
@@ -730,11 +760,28 @@ input:-webkit-autofill {
 
 .interviewer-signupContainer-right {
   margin: 2em 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
   /* border: 1px solid green; */
 
   display: flex;
   flex-direction: column;
+}
+
+.boxBackground {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1.5em;
+
+  width: 100%;
+
+  background-color: #f6f6f6;
+}
+
+#interviewer-signup {
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 #interviewer-signup ul li {
@@ -786,7 +833,7 @@ input:-webkit-autofill {
 }
 
 .aboutContainer-left p {
-  padding: 0.5em 0;
+  padding: 0.1em 0;
   width: 100%;
 }
 
@@ -796,10 +843,10 @@ input:-webkit-autofill {
 }
 
 .aboutContainer-right {
-  margin: 0;
+  margin-top: 1em;
   margin-right: 2em;
   margin-bottom: 3em;
-  align-self: center;
+  align-self: flex-start;
 
   flex: auto;
 
@@ -904,13 +951,14 @@ input:-webkit-autofill {
     margin: auto 4em;
     margin-right: 0;
 
+    text-align: left;
+
     width: 60%;
     /* border: 1px solid green; */
   }
 
   .container-left p {
     width: 80%;
-    margin-top: 2em;
   }
 
   .container-right {
@@ -937,6 +985,23 @@ input:-webkit-autofill {
 
     width: 40%;
     /* height: 50px; */
+  }
+
+  #seeker .InputAddOn {
+    flex-direction: row;
+  }
+
+  #seeker .InputAddOn-field {
+    width: 50%;
+  }
+
+  #seeker .InputAddOn-item {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #seeker button {
+    font-size: 1.1em;
   }
 
   .formExpert .InputAddOn {
@@ -1005,8 +1070,14 @@ input:-webkit-autofill {
   }
 
   .accordion-right {
-    padding-left: 5em;
+    padding-left: 2em;
+    padding-top: 0;
     width: 40%;
+  }
+
+  .rightBox-faq {
+    padding: 2em;
+    background-color: #f6f6f6;
   }
 
   /* signup page */
@@ -1016,16 +1087,16 @@ input:-webkit-autofill {
   }
 
   .signupContainer-left {
-    margin: 4em 4em;
-    margin-top: 5em;
-    flex: 2;
+    margin: 3em 4em;
+    /* border: 1px solid blue; */
+    width: 50%;
   }
 
-  .signupContainer-right {
+  /* .signupContainer-right {
     margin-right: 4em;
     margin-bottom: auto;
     flex: 1.5;
-  }
+  } */
 
   .interviewer-formsignupDetails ul,
   .formsignupDetails ul {
@@ -1034,7 +1105,7 @@ input:-webkit-autofill {
   }
 
   .formsignupDetails ul li {
-    width: 60%;
+    width: 70%;
   }
 
   /* thank you page */
@@ -1047,6 +1118,7 @@ input:-webkit-autofill {
 
   .thankyouContainer-left {
     margin: 2em 4em;
+    width: 50%;
   }
 
   /* .thankyouContainer-right {
@@ -1055,18 +1127,34 @@ input:-webkit-autofill {
 
   /* interviewer signup page */
 
+  .interviewer-signup-container {
+    margin-bottom: 2em;
+  }
+
   .interviewer-signupContainer-left {
+    margin-left: 4em;
     margin-right: 1em;
     text-align: left;
-    width: 55%;
+    width: 50%;
   }
 
   .interviewer-signupContainer-right {
-    margin: 4em 4em;
+    margin: 3em 4em;
     margin-left: 2em;
-    margin-bottom: 2em;
-    padding-left: 5em;
-    width: 45%;
+    /* padding-left: 5em; */
+    width: 50%;
+  }
+
+  .boxBackground {
+    margin: auto;
+    margin-right: 0;
+    padding-left: 3em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+
+    width: 90%;
+
+    background-color: #f6f6f6;
   }
 
   #interviewer-signup ul li {
@@ -1074,7 +1162,7 @@ input:-webkit-autofill {
   }
 
   #interviewer-signup button {
-    width: 80%;
+    width: 60%;
   }
 
   /* interv -thankyou page */
@@ -1105,8 +1193,12 @@ input:-webkit-autofill {
   }
 
   .aboutContainer-left p {
-    text-align: justify;
-    text-justify: inter-word;
+    /* text-align: justify;
+    text-justify: inter-word; */
+  }
+
+  .aboutContainer-right {
+    margin-top: 4em;
   }
 
   .about-imageStyle img {

@@ -120,17 +120,19 @@
                   <li>Get hired faster</li>
                 </ul>
                 <div>
-                  <form action="#" class="formSeeker">
+                  <form action="#" class="formSeeker" id="seeker">
                     <div class="InputAddOn">
                       <input
                         class="InputAddOn-field"
                         placeholder="Enter your email address"
                       />
-                      <button class="InputAddOn-item">Get Started</button>
+                      <button class="InputAddOn-item" id="seekerButton">
+                        Get Started
+                      </button>
                     </div>
                   </form>
                 </div>
-                <p class="colorLine">
+                <p class="colorLine fontOffer">
                   Book your first mock interview for <strike>$89</strike>
                   <b>$49</b>. Offer ends January 30, 2021.
                 </p>
@@ -147,8 +149,7 @@
             <div class="container-column container-box box-style" id="practise">
               <div class="box-width-expertOrg">
                 <h2 class="heading-container">
-                  Practice mock interviews with top product professionals
-                  from...
+                  Practice mock interviews with top professionals from...
                 </h2>
                 <div class="gallery">
                   <div class="img-container">
@@ -202,8 +203,8 @@
                 <div class="container-column hiwBox">
                   <div class="numberBox">3</div>
                   <p>
-                    A portion of the fee you pay benefits a charity of
-                    professional’s choice.
+                    Attend your interview session and get expert feedback on
+                    your performance.
                   </p>
                 </div>
               </div>
@@ -230,7 +231,7 @@
                   which still shapes my work.
                 </p>
                 <p class="bold">Tim L.</p>
-                <hr class="line" />
+                <!-- <hr class="line" /> -->
               </div>
             </div>
           </section>
@@ -255,7 +256,7 @@
                 </div>
               </form>
             </div>
-            <p class="colorLine spaceLine">
+            <p class="colorLine spaceLine fontOffer">
               Book your first mock interview for <strike>$89</strike
               ><b> $49</b>. Offer ends January 30, 2021.
             </p>
@@ -292,7 +293,9 @@
             </div>
           </section>
           <section id="footer2">
-            <a href="t&c.html">Terms of Use & Privacy Policy</a>
+            <a href="t&c.html" class="font-small"
+              >Terms of Use & Privacy Policy</a
+            >
             <p class="font-small">© 2020-21. All rights reserved.</p>
           </section>
         </footer>
@@ -329,4 +332,5 @@
   <script src="./js/sidebar.js"></script>
   <!-- <script src="./js/stickyheader.js"></script> -->
   <script src="./js/headerAnimation.js"></script>
+  <script src="./js/buttonIndex.js"></script>
 </html>

@@ -18,8 +18,6 @@ a {
   color: #a2008a;
   text-size-adjust: none;
   text-decoration: none;
-
-  font: inherit;
 }
 
 a:hover {
@@ -32,4 +30,14 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+}
+
+.button:active,
+button:active,
+.button:focus,
+button:focus,
+.button:hover,
+button:hover {
+  border: none !important;
+  outline: none !important;
 }

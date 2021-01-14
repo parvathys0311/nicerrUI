@@ -35,6 +35,14 @@ main p {
   font-size: 1.1em;
 }
 
+main ul {
+  font-size: 1.1em;
+}
+
+#sidebar-links a {
+  font-size: 1.1em;
+}
+
 .about-container p {
   font-size: 1.1em;
 }
@@ -61,6 +69,10 @@ main button {
 }
 
 .font-small {
+  font-size: 0.9em;
+}
+
+.fontOffer {
   font-size: 0.9em;
 }
 
