@@ -1,8 +1,18 @@
-var mql = window.matchMedia("(max-width: 830px)");
-function matches()
-{
-    var elem = document.getElementById("seekerButton");
-    // elem.innerHTML = mql.matches ? "<img src=\"./images/go.svg\" width=\"20px\" style=\"color: white;\">" : "Get Started";
-    elem.innerHTML = mql.matches ?"<i class=\"fas fa-angle-double-right\"></i>": "Get Started";
+var elem = document.getElementById("seekerButton");
+
+const mediaQuery = window.matchMedia('(orientation:landscape)')
+function handleScreenChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Then log the following message to the console
+    elem.innerHTML = "Get Started";
+  }
+  else {
+    elem.innerHTML = "<i class=\"fas fa-angle-double-right\"></i>";
+  }
 }
-mql.onchange = matches;
+// Register event listener
+mediaQuery.addListener(handleScreenChange)
+handleScreenChange(mediaQuery)
+
+
