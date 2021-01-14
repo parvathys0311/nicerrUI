@@ -193,7 +193,7 @@ main {
 } */
 
 #seeker button {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 button {
@@ -404,11 +404,11 @@ button:checked {
 }
 
 .formExpert .InputAddOn-field {
-  width: 50%;
+  width: 80%;
 }
 
 .formExpert .InputAddOn-item {
-  width: 50%;
+  width: 20%;
 }
 
 .spaceLine {
@@ -1051,6 +1051,19 @@ input:-webkit-autofill {
     /* display: block; */
 
     /* border: 1px solid blue; */
+  }
+
+  #seeker2 .InputAddOn-field {
+    width: 50%;
+  }
+
+  #seeker2 .InputAddOn-item {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #seeker2 button {
+    font-size: 1.1em;
   }
 
   /* faq page */
