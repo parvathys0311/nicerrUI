@@ -44,7 +44,7 @@
   /* padding: 1em; */
   margin: auto;
   padding-right: 0.5em;
-  width: 16%;
+  width: 20%;
   /* border: 1px solid black; */
 }
 
@@ -272,7 +272,7 @@ button:checked {
 .heading-container {
   /* border: 1px solid orange; */
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 
 .gallery {
@@ -1010,6 +1010,12 @@ input:-webkit-autofill {
 
   .formExpert .InputAddOn-item {
     width: 40%;
+  }
+
+  .heading-container {
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+    width: 70%;
   }
 
   .hiwDetails {
