@@ -13,6 +13,10 @@ body {
   color: #222222;
 }
 
+span {
+  font-family: "Inter", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -39,12 +43,19 @@ main ul {
   font-size: 1.1em;
 }
 
+#interviewer-signup ul,
+#signup ul {
+  font-size: 0.95em;
+}
+
 #sidebar-links a {
   font-size: 1.1em;
 }
 
-.about-container p {
-  font-size: 1.1em;
+#faq p,
+#about-us p,
+#interviewer p {
+  font-size: 0.95em;
 }
 
 main button {

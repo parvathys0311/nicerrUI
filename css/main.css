@@ -747,6 +747,7 @@ input:-webkit-autofill {
 
 .interviewer-signupContainer-left {
   margin: 3em 2em;
+  margin-bottom: 1em;
 
   text-align: left;
   /* border: 1px solid red; */
@@ -756,14 +757,12 @@ input:-webkit-autofill {
   justify-content: flex-start;
 }
 
-.interviewer-signupContainer-left h2,
-.interviewer-signupContainer-left p {
-  /* flex: auto;
-  padding: 1em; */
+.interviewer-signupContainer-left h2 {
+  margin-bottom: 1em;
 }
 
 .interviewer-signupContainer-right {
-  margin: 2em 2em;
+  margin: 3em 2em;
   margin-top: 1em;
   /* border: 1px solid green; */
 
@@ -1217,6 +1216,7 @@ input:-webkit-autofill {
 
   .aboutContainer-left {
     margin: 3em 4em;
+    margin-top: 2em;
     max-width: 50%;
 
     display: flex;
