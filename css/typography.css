@@ -54,8 +54,13 @@ main ul {
 
 #faq p,
 #about-us p,
-#interviewer p {
+#interviewer p,
+#tc-id p {
   font-size: 0.95em;
+}
+
+.testimonial-content {
+  font-size: 1em;
 }
 
 main button {
