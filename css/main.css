@@ -428,6 +428,7 @@ button:checked {
 }
 #faq {
   margin: 4em 2em;
+  margin-top: 10em;
 }
 
 #faq h2 {
@@ -874,7 +875,7 @@ input:-webkit-autofill {
 }
 
 .aboutContainer-left {
-  margin: 3em 2em;
+  margin: auto 2em;
   max-width: 100%;
 
   display: flex;
@@ -1299,7 +1300,7 @@ input:-webkit-autofill {
   .aboutContainer-left {
     margin: 3em 4em;
     margin-top: 2em;
-    width: 50%;
+    max-width: 50%;
 
     display: flex;
     flex-direction: column;

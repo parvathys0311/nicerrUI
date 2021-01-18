@@ -7,6 +7,7 @@ header {
 header.sticky nav {
   padding: 0.5em;
   padding-left: 0;
+  padding-right: 0;
   transition: padding 300ms ease;
   opacity: 0.9;
 }
