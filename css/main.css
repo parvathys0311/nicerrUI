@@ -708,6 +708,14 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#seeker2 input:-webkit-autofill,
 #seeker input:-webkit-autofill {
   -webkit-text-fill-color: #222222 !important;
 }
@@ -716,6 +724,7 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #279600 !important;
 }
 
+#contactForm input,
 #interviewer-signup input,
 #signup input,
 #signup textarea {
@@ -827,6 +836,7 @@ input:-webkit-autofill {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1.5em;
+  padding-bottom: 1.5em;
 
   width: 100%;
 
