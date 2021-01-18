@@ -103,12 +103,18 @@
 
         <main>
           <!-- HERO Section  -->
-          <section id="signUp">
-            <div class="signup-container">
-              <div class="signupContainer-left">
-                <h2>Find the right professional to help you succeed.</h2>
+          <section id="contact">
+            <div class="contact-container">
+              <div class="contactContainer-left">
+                <h4>
+                  Comments, questions, feedback…? We’d love to hear from you.
+                </h4>
                 <div>
-                  <form action="#" class="formsignupDetails" id="signup">
+                  <form
+                    action="#"
+                    class="contact-formsignupDetails"
+                    id="contactForm"
+                  >
                     <ul class="containerForm">
                       <li>
                         <label>Email</label>
@@ -117,49 +123,27 @@
                           name="email"
                           placeholder="Type here"
                           class="ex-input"
+                          required
                         />
                       </li>
                       <li>
                         <label>Name</label>
                         <input
                           type="text"
-                          name="name"
+                          name="email"
                           placeholder="Type here"
                           class="ex-input"
+                          required
                         />
                       </li>
+
                       <li>
-                        <label>LinkedIn Profile Link</label>
-                        <input
-                          type="text"
-                          name="linkedin"
-                          placeholder="Paste here"
-                          class="ex-input"
-                        />
-                      </li>
-                      <li>
-                        <label>Product roles I want to practice for</label>
-                        <select id="role" class="ex-input selectSeeker">
-                          <option value="" disabled selected>Select</option>
-                          <option value="1" class="color">
-                            General Product Management
-                          </option>
-                          <option value="2">
-                            Technical Product Management
-                          </option>
-                          <option value="3">Product Owner</option>
-                          <option value="4">Others</option>
-                        </select>
-                      </li>
-                      <li>
-                        <label
-                          >More information about role, interview date, company,
-                          etc.
-                        </label>
+                        <label>Message</label>
                         <textarea
                           rows="4"
-                          placeholder="E.g.: I have an interview on Feb 7 for a Product Manager role at Microsoft.
+                          placeholder="What would you like to tell us.
                         "
+                          required
                         ></textarea>
                       </li>
                       <li>
@@ -175,12 +159,8 @@
                     </ul>
                   </form>
                 </div>
-                <p class="font-small">
-                  By clicking on submit, you understand and consent to our
-                  <a href="#">Terms of Service & Privacy Policy</a>
-                </p>
               </div>
-              <div class="signupContainer-right">
+              <!-- <div class="signupContainer-right">
                 <div class="rightBox-signupSeeker">
                   <p>
                     "Practicing an interview calmed my nerves and gave me a lot
@@ -188,7 +168,7 @@
                     better during my actual interview." <b>- Joanna S.</b>
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </main>

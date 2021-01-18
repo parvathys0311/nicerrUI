@@ -535,6 +535,31 @@ button:checked {
 }
 
 /* **************************************** */
+/********** Contact PAGE **********/
+/* ****************************************  */
+
+.contact-container {
+  margin-top: 10em;
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contactContainer-left {
+  margin: auto 2em;
+
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactContainer-left form {
+  margin-top: 2em;
+  width: 90%;
+}
+
+/* **************************************** */
 /********** signup QUERY PAGE **********/
 /* ****************************************  */
 .interviewer-signup-container,
@@ -545,7 +570,7 @@ button:checked {
 
 .signupContainer-left {
   margin: 3em 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   /* flex: auto; */
   /* border: 1px solid red; */
 
@@ -558,6 +583,17 @@ button:checked {
 
   display: flex;
   flex-direction: column;
+}
+
+.signupContainer-right {
+  flex: auto;
+  margin: 0 2em;
+  margin-bottom: 3em;
+}
+
+.rightBox-signupSeeker {
+  padding: 1em;
+  background-color: #f6f6f6;
 }
 
 /* .signupContainer-right {
@@ -582,6 +618,7 @@ button:checked {
   padding: 1em 0;
 }
 
+#contactForm button,
 #interviewer-signup button,
 #signup button {
   margin-top: 0.5em;
@@ -592,16 +629,22 @@ button:checked {
   font-size: bold;
 }
 
+#contactForm button {
+  width: 90%;
+}
+
 .formsignupDetails {
   background-color: white;
 }
 
+.contact-formsignupDetails ul,
 .interviewer-formsignupDetails ul,
 .formsignupDetails ul {
   display: flex;
   flex-direction: column;
 }
 
+.contact-formsignupDetails ul li,
 .interviewer-formsignupDetails ul li,
 .formsignupDetails ul li {
   margin-top: 1.2em;
@@ -616,11 +659,17 @@ button:checked {
   border: 1px solid orange;
 } */
 
+.contact-.contact-formsignupDetails label,
 .interviewer-formsignupDetails label,
 .formsignupDetails label {
   margin: 0;
   padding-bottom: 0.2em;
 }
+
+.contact-formsignupDetails input,
+.contact-formsignupDetails textarea,
+.contact-formsignupDetails option,
+.contact-formsignupDetails select,
 .interviewer-formsignupDetails input,
 .interviewer-formsignupDetails textarea,
 .interviewer-formsignupDetails option,
@@ -1003,9 +1052,9 @@ input:-webkit-autofill {
     flex-direction: row;
   }
 
-  #seeker .InputAddOn-field {
+  /* #seeker .InputAddOn-field {
     width: 50%;
-  }
+  } */
 
   #seeker .InputAddOn-item {
     margin-top: 0;
@@ -1016,13 +1065,13 @@ input:-webkit-autofill {
     font-size: 1.1em;
   }
 
-  .formExpert .InputAddOn {
+  /* .formExpert .InputAddOn {
     width: 60%;
   }
 
   .formExpert .InputAddOn-item {
     width: 40%;
-  }
+  } */
 
   .heading-container {
     /* border: 1px solid orange; */
@@ -1071,6 +1120,10 @@ input:-webkit-autofill {
     /* border: 1px solid blue; */
   }
 
+  #seeker2 .InputAddOn {
+    width: 50%;
+  }
+
   #seeker2 .InputAddOn-field {
     width: 50%;
   }
@@ -1106,9 +1159,36 @@ input:-webkit-autofill {
     width: 40%;
   }
 
+  .rightBox-signupSeeker,
   .rightBox-faq {
     padding: 2em;
     background-color: #f6f6f6;
+  }
+
+  /* contact page */
+
+  .contact-container {
+    margin-top: 5em;
+    min-height: 80vh;
+  }
+
+  .contactContainer-left {
+    margin-top: 3em;
+    margin-left: 4em;
+    margin: 3em 4em;
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactContainer-left form {
+    margin-top: 2em;
+    width: 80%;
+  }
+
+  #contactForm button {
+    width: 40%;
   }
 
   /* signup page */
@@ -1120,15 +1200,16 @@ input:-webkit-autofill {
   .signupContainer-left {
     margin: 3em 4em;
     /* border: 1px solid blue; */
-    width: 50%;
+    width: 60%;
   }
 
-  /* .signupContainer-right {
+  .signupContainer-right {
     margin-right: 4em;
-    margin-bottom: auto;
-    flex: 1.5;
-  } */
+    margin-top: 11em;
+    width: 40%;
+  }
 
+  .contact-formsignupDetails ul,
   .interviewer-formsignupDetails ul,
   .formsignupDetails ul {
     display: flex;
@@ -1218,7 +1299,7 @@ input:-webkit-autofill {
   .aboutContainer-left {
     margin: 3em 4em;
     margin-top: 2em;
-    max-width: 50%;
+    width: 50%;
 
     display: flex;
     flex-direction: column;
